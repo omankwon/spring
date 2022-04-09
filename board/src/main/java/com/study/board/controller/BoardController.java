@@ -21,7 +21,7 @@ public class BoardController {
 
     @PostMapping("/board/writepro")
     public String boardWritePro(Board board) {
-        System.out.println("제목 :" + board.getTitle());
+//        System.out.println("제목 :" + board.getTitle());
 
         boardService.write(board);
         return "test";
