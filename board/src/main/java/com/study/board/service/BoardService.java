@@ -28,4 +28,10 @@ public class BoardService {
 
         return boardRepository.findById(id).get();
     }
+
+    // 글삭제
+    public void boardDelete(Integer id) {
+
+        boardRepository.deleteById(id);
+    }
 }
