@@ -10,6 +10,8 @@
     게시글 상세
     게시글 삭제
     게시글 update: @PathValiable 사용법
+    게시글 message: javascript (CDATA , alert. location.replace)
+
 #### Reference Documentation
 * [게시판 무작정 따라하기](https://youtu.be/frI5CoZe-vE)
 * [스프링부트 게시판_참고자료](https://developer-rooney.tistory.com/153?category=496529)

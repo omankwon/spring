@@ -17,15 +17,19 @@ public class BoardController {
 
     @GetMapping("/board/write")
     public String boardWriteForm(){
+
+
         return "boardwrite";
     }
 
     @PostMapping("/board/writepro")
-    public String boardWritePro(Board board) {
-//        System.out.println("제목 :" + board.getTitle());
+    public String boardWritePro(Board board, Model model) {
 
         boardService.write(board);
-        return "test";
+
+        model.addAttribute("message","글작성이 완료되었습니다.");
+        model.addAttribute("url", "/board/list");
+        return "message";
     }
 
     @GetMapping("/board/list")
